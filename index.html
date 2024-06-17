@@ -18,12 +18,12 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
       <div class="large-logo">
-        <img alt="Library Carpentry" src="assets/images/library-logo.svg"><abbr class="badge badge-light" title="This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback." style="background-color: #FFC700; border-radius: 5px">
-          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#field-testing-alpha-stage" class="external-link alert-link" style="color: #383838">
-            <i aria-hidden="true" class="icon" data-feather="alert-triangle" style="border-radius: 5px"></i>
-            Alpha
+        <img alt="Library Carpentry" src="assets/images/library-logo.svg"><abbr class="badge badge-light" title="This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team." style="background-color: #001483; border-radius: 5px">
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#polishing-beta-stage" class="external-link alert-link" style="color: #FFF7F1">
+            <i aria-hidden="true" class="icon" data-feather="alert-circle" style="border-radius: 5px"></i>
+            Beta
           </a>
-          <span class="visually-hidden">This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback.</span>
+          <span class="visually-hidden">This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team.</span>
         </abbr>
         
       </div>
@@ -155,7 +155,8 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#installing-python-using-anaconda">Installing Python Using Anaconda</a></li>
-<li><a href="#starting-python">Starting Python</a></li>
+<li><a href="#jupyterlab">JupyterLab</a></li>
+<li><a href="#download-the-data">Download the data</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -165,7 +166,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-getting-started.html">1. Getting Started</a>
+        <a href="getting-started.html">1. Getting Started</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -174,7 +175,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-variables.html">2. Variables and Assignment</a>
+        <a href="variables.html">2. Variables and Types</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -183,7 +184,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-types-conversion.html">3. Data Types and Type Conversion</a>
+        <a href="lists.html">3. Lists</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -192,7 +193,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-built-in.html">4. Built-in Functions and Help</a>
+        <a href="functions.html">4. Built-in Functions and Help</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -201,7 +202,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-coffee.html">5. Morning Coffee</a>
+        <a href="libraries.html">5. Libraries &amp; Pandas</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -210,7 +211,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-libraries.html">6. Libraries</a>
+        <a href="for-loops.html">6. For Loops</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -219,7 +220,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="10-lunch.html">7. Lunch</a>
+        <a href="looping-data-sets.html">7. Looping Over Data Sets</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -228,7 +229,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="11-lists.html">8. Lists</a>
+        <a href="pandas.html">8. Using Pandas</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -237,7 +238,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="12-for-loops.html">9. For Loops</a>
+        <a href="conditionals.html">9. Conditionals</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -246,7 +247,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="13-looping-data-sets.html">10. Looping Over Data Sets</a>
+        <a href="writing-functions.html">10. Writing Functions</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -255,7 +256,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="14-writing-functions.html">11. Writing Functions</a>
+        <a href="tidy.html">11. Tidy Data with Pandas</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -264,7 +265,7 @@
 <div class="accordion accordion-flush" id="accordionFlush13">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading13">
-        <a href="15-scope.html">12. Variable Scope</a>
+        <a href="data-visualisation.html">12. Data Visualisation</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -273,43 +274,7 @@
 <div class="accordion accordion-flush" id="accordionFlush14">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading14">
-        <a href="16-coffee.html">13. Afternoon Coffee</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush15">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading15">
-        <a href="17-conditionals.html">14. Conditionals</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush16">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading16">
-        <a href="18-style.html">15. Programming Style</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush17">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading17">
-        <a href="19-wrap.html">16. Wrap-Up</a>
-    </div><!--/div.accordion-header-->
-        
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush18">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading18">
-        <a href="20-feedback.html">17. Feedback</a>
+        <a href="wrap.html">13. Wrap-Up</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -357,11 +322,11 @@
         <!-- START: inst/pkgdown/templates/content-syllabus.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link float-end" href="01-getting-started.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="getting-started.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link float-end" href="01-getting-started.html" rel="next">Next: Getting Started... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="getting-started.html" rel="next">Next: Getting Started... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Setup</h1>
       
@@ -390,30 +355,12 @@ version</a>.</li>
 </ul></div>
 </div>
 </div>
-<p>This lesson is an introduction to programming in Python for
-librarians with little or no previous programming experience. It uses
-examples that are relevant to a wide range of library use cases, and is
-designed to be used as a prerequisite lesson for other Python based
-lessons that will be developed in the future, e.g. using the Pandas for
-data analysis.</p>
-<p>This lesson references the Spyder IDE, but can be taught using a
-regular Python interpreter as well. Please note that this lesson uses
-Python 3 rather than Python 2.</p>
-<div id="under-design" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="under-design" class="callout-inner">
-<h3 class="callout-title">Under Design<a class="anchor" aria-label="anchor" href="#under-design"></a>
-</h3>
-<div class="callout-content">
-<p><strong>This lesson is currently in its early design stage; please
-check <a href="design.html">the design notes</a> to see what we have so
-far. Contributions are very welcome: we would be particularly grateful
-for exercises and for commentary on the ones already there.</strong></p>
-</div>
-</div>
-</div>
+<p>This lesson is an introduction to programming in Python for library
+and information workers with little or no previous programming
+experience. It uses examples that are relevant to a range of library use
+cases, and is designed as a prerequisite for other Python lessons that
+will be developed in the future (e.g., web scraping, APIs). The lesson
+uses the JupyterLab computing environment and Python 3.</p>
 <div id="prerequisites" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -422,13 +369,12 @@ for exercises and for commentary on the ones already there.</strong></p>
 <h3 class="callout-title">Prerequisites<a class="anchor" aria-label="anchor" href="#prerequisites"></a>
 </h3>
 <div class="callout-content">
-<ol style="list-style-type: decimal"><li><p>Learners need to understand what files and directories are, what
-a working directory is, and how to start a Python interpreter from a
-terminal window.</p></li>
-<li><p>Learners must install <a href="https://www.anaconda.com/download/" class="external-link">Anaconda</a> before the class
-starts.</p></li>
-</ol><p>Please see <a href="index.html#setup">the setup instructions</a> for
-details.</p>
+<ol style="list-style-type: decimal"><li><p>Learners need to understand what files and directories are and
+what a working directory is.</p></li>
+<li><p>Learners must install Python and JupyterLab, and download the
+dataset that will be used in the lesson, before the workshop
+begins.</p></li>
+</ol><p>Please see setup instructions below for details.</p>
 </div>
 </div>
 </div>
@@ -436,94 +382,94 @@ details.</p>
 
       <section id="setup"><section id="installing-python-using-anaconda"><h2 class="section-heading">Installing Python Using Anaconda<a class="anchor" aria-label="anchor" href="#installing-python-using-anaconda"></a>
 </h2>
-<hr class="half-width"><p><a href="https://python.org" class="external-link">Python</a> is great for general-purpose
-programming and is a popular language for scientific computing as well.
-Installing all of the packages required for this lessons individually
-can be a bit difficult, however, so we recommend the all-in-one
-installer <a href="https://www.anaconda.com/distribution" class="external-link">Anaconda</a>.</p>
+<hr class="half-width"><p>Python is a popular language for research computing, and great for
+general-purpose programming as well. Installing all of its research
+packages individually can be a bit difficult, so we recommend Anaconda,
+an all-in-one installer.</p>
 <p>Regardless of how you choose to install it, please make sure you
-install Python version 3.x (e.g., Python 3.6 version). Also, please set
-up your Python environment at least a day in advance of the workshop. If
-you encounter problems with the installation procedure, ask your
-workshop organizers via e-mail for assistance so you are ready to go as
-soon as the workshop begins.</p>
+install Python 3.6 or above. The latest 3.x version recommended on <a href="https://python.org/downloads" class="external-link">Python.org</a> is fine.</p>
+<p>We will teach Python using JupyterLab, a programming environment that
+runs in a web browser (JupyterLab will be installed by Anaconda). For
+this to work you will need a reasonably up-to-date browser. The current
+versions of the Chrome, Safari and Firefox browsers are all supported
+(some older browsers, including Internet Explorer version 9 and below,
+are not).</p>
 <div class="section level3">
 <h3 id="windows---video-tutorialvideo-windows">Windows - <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA" class="external-link">Video
 tutorial</a>
 <a class="anchor" aria-label="anchor" href="#windows---video-tutorialvideo-windows"></a></h3>
 <ol style="list-style-type: decimal"><li><p>Open <a href="https://www.anaconda.com/download/" class="external-link">anaconda.com/download</a> with
 your web browser.</p></li>
-<li><p>Download the Python 3 installer for Windows.</p></li>
-<li><p>Double-click the executable and install Python 3 using
-<em>MOST</em> of the default settings. The only exception is to check
-the <strong>Make Anaconda the default Python</strong> option.</p></li>
+<li><p>Download the Anaconda for Windows installer with Python 3. (If
+you are not sure which version to choose, you probably want the 64-bit
+Graphical Installer <em>Anaconda3-…-Windows-x86_64.exe</em>)</p></li>
+<li><p>Install Python 3 by running the Anaconda Installer, using all of
+the defaults for installation except make sure to check <em>Add Anaconda
+to my PATH environment variable</em>.</p></li>
 </ol></div>
 <div class="section level3">
 <h3 id="macos---video-tutorialvideo-mac">macOS - <a href="https://www.youtube.com/watch?v=TcSAln46u9U" class="external-link">Video
 tutorial</a>
 <a class="anchor" aria-label="anchor" href="#macos---video-tutorialvideo-mac"></a></h3>
-<ol style="list-style-type: decimal"><li><p>Open <a href="https://www.anaconda.com/download/" class="external-link">anaconda.com/download</a> with
-your web browser.</p></li>
-<li><p>Download the Python 3 installer for macOS.</p></li>
-<li><p>Install Python 3 using all of the defaults for
-installation.</p></li>
+<ol style="list-style-type: decimal"><li>Open <a href="https://www.anaconda.com/download/" class="external-link">anaconda.com/download</a> with
+your web browser.</li>
+<li>Download the Anaconda Installer with Python 3 for macOS (you can
+either use the Graphical or the Command Line Installer).</li>
+<li>Install Python 3 by running the Anaconda Installer using all of the
+defaults for installation.</li>
 </ol></div>
 <div class="section level3">
 <h3 id="linux">Linux<a class="anchor" aria-label="anchor" href="#linux"></a></h3>
 <p>Note that the following installation steps require you to work from
-the shell. If you run into any difficulties, please request help before
-the workshop begins.</p>
+the shell. If you aren’t comfortable doing the installation yourself
+stop here and request help from the workshop organizers.</p>
 <ol style="list-style-type: decimal"><li><p>Open <a href="https://www.anaconda.com/download/" class="external-link">anaconda.com/download</a> with
 your web browser.</p></li>
-<li><p>Download the Python 3 installer for Linux.</p></li>
-<li><p>Install Python 3 using all of the defaults for
-installation.</p></li>
-</ol><ol style="list-style-type: lower-alpha"><li><p>Open a terminal window.</p></li>
-<li><p>Navigate to the folder where you downloaded the
-installer</p></li>
-<li><p>Type</p></li>
-</ol><div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> bash Anaconda3-</span></code></pre>
-</div>
-<p>and press tab. The name of the file you just downloaded should
-appear.</p>
-<ol start="4" style="list-style-type: lower-alpha"><li><p>Press enter.</p></li>
-<li><p>Follow the text-only prompts. When the license agreement appears
-(a colon will be present at the bottom of the screen) hold the down
-arrow until the bottom of the text. Type <code>yes</code> and press
-enter to approve the license. Press enter again to approve the default
-location for the files. Type <code>yes</code> and press enter to prepend
-Anaconda to your <code>PATH</code> (this makes the Anaconda distribution
-the default Python).</p></li>
+<li><p>Download the Anaconda Installer with Python 3 for Linux.</p></li>
+<li><p>Open a terminal window and navigate to the directory where the
+executable is downloaded (e.g., <code>cd ~/Downloads</code>).</p></li>
+<li><p>Type <code>bash Anaconda3</code> and press <kbd>Tab</kbd> to
+auto-complete the full file name. The name of file you just downloaded
+should appear.</p></li>
+<li><p>Press <kbd>Enter</kbd> (or <kbd>Return</kbd> depending on your
+keyboard). You will follow the text-only prompts. To move through the
+text, press <kbd>Spacebar</kbd>. Type <code>yes</code> and press
+<kbd>Enter</kbd> to approve the license. Press <kbd>Enter</kbd> (or
+<kbd>Return</kbd>) to approve the default location for the files. Type
+<code>yes</code> and press <kbd>Enter</kbd> (or <kbd>Return</kbd>) to
+prepend Anaconda to your PATH (this makes the Anaconda distribution the
+default Python).</p></li>
+<li><p>Close the terminal window.</p></li>
 </ol></div>
-</section><section id="starting-python"><h2 class="section-heading">Starting Python<a class="anchor" aria-label="anchor" href="#starting-python"></a>
+</section><section id="jupyterlab"><h2 class="section-heading">JupyterLab<a class="anchor" aria-label="anchor" href="#jupyterlab"></a>
 </h2>
-<hr class="half-width"><p>We will teach Python using <a href="https://www.spyder-ide.org/" class="external-link">Spyder</a>. If you installed Python
-using Anaconda, Spyder should already be on your system. If you did not
-use Anaconda, use the Python package manager pip (see the <a href="https://docs.spyder-ide.org/installation.html" class="external-link">Spyder website</a>
-for details.)</p>
-<p>To start Spyder, open a terminal or Git Bash and type the
-command:</p>
-<div class="codewrapper sourceCode" id="cb2">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> spyder</span></code></pre>
-</div>
-<p>To start the Python interpreter without Spyder, open a terminal or
-Git Bash and type the command:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> python3</span></code></pre>
-</div>
+<hr class="half-width"><p>We will teach Python using JupyterLab, a part of a family of <a href="https://docs.jupyter.org/en/latest/" class="external-link">Jupyter</a> tools that
+includes Jupyter Notebook and JupyterLab, both of which provide
+interactive web environments where you can write and run Python code. If
+you installed Anaconda, JupyterLab is installed on your system. If you
+did not install Anaconda, you can <a href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html" class="external-link">install
+JupyterLab</a> on its own using conda, pip, or other popular package
+managers.</p>
+</section><section id="download-the-data"><h2 class="section-heading">Download the data<a class="anchor" aria-label="anchor" href="#download-the-data"></a>
+</h2>
+<hr class="half-width"><ol style="list-style-type: decimal"><li>Download <a href="files/data.zip">this zip file</a> and save it to
+your Desktop.</li>
+<li>Unzip the <code>data.zip</code> file, which should create a new
+folder called <code>data</code>.</li>
+<li>Create a new folder on your Desktop called <code>lc-python</code>
+and put the <code>data</code> folder in this folder.</li>
+</ol><p>This lesson uses circulation data in multiple CSV files from the
+Chicago Public Library system. The data was compiled from records shared
+by the Chicago Public Library in <a href="https://catalog.data.gov/dataset/?q=chicago+%22circulation+by+location%22" class="external-link">the
+data.gov catalog</a>. Please do not download the circulation data from
+data.gov since the dataset you downloaded following the steps above has
+been altered for our purposes.</p>
 </section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link float-end" href="01-getting-started.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="getting-started.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link float-end" href="01-getting-started.html" rel="next">Next: Getting Started... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="getting-started.html" rel="next">Next: Getting Started... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
     </nav></div>
 <!-- END  : inst/pkgdown/templates/content-syllabus.html -->
@@ -567,8 +513,8 @@ Git Bash and type the command:</p>
   "url": "https://librarycarpentry.github.io/lc-python-intro/index.html",
   "identifier": "https://librarycarpentry.github.io/lc-python-intro/index.html",
   "dateCreated": "2018-04-12",
-  "dateModified": "2024-06-11",
-  "datePublished": "2024-06-11"
+  "dateModified": "2024-06-17",
+  "datePublished": "2024-06-17"
 }
 
   </script><script>
