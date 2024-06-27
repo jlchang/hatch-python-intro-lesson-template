@@ -296,12 +296,22 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         11. Tidy Data with Pandas
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+        
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#tidy-data-in-pandas">Tidy Data in Pandas</a></li>
+<li><a href="#tidy-data">Tidy Data</a></li>
+<li><a href="#making-our-data-tidy">Making Our Data Tidy</a></li>
+<li><a href="#adding-a-date-column">Adding a Date Column</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
         
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -382,7 +392,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Tidy Data with Pandas</h1>
-        <p>Last updated on 2024-06-17 |
+        <p>Last updated on 2024-06-27 |
         
         <a href="https://github.com/librarycarpentry/lc-python-intro/edit/main/episodes/tidy.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -426,9 +436,9 @@ files into a single DataFrame and reshaping it using melt()</li>
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="tidy-data-in-pandas">Tidy Data in Pandas<a class="anchor" aria-label="anchor" href="#tidy-data-in-pandas"></a></h1>
-<p>Let’s import the pickle file that contains all of our Chicago public
+<section id="tidy-data-in-pandas"><h2 class="section-heading">Tidy Data in Pandas<a class="anchor" aria-label="anchor" href="#tidy-data-in-pandas"></a>
+</h2>
+<hr class="half-width"><p>Let’s import the pickle file that contains all of our Chicago public
 library circulation data in a single DataFrame. We can use the Pandas
 <code>.read_pickle()</code> method to do so.</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -687,9 +697,9 @@ which can be quite cumbersome.</p>
 <p>To address this we can reshape our data in a long format. This is
 sometimes called un-pivoting the data, and in our case the month columns
 will become a single variable in the dataset.</p>
-<div class="section level2">
-<h2 id="tidy-data">Tidy Data<a class="anchor" aria-label="anchor" href="#tidy-data"></a></h2>
-<p>Tidy data is a standard way of organizing data values within a
+</section><section id="tidy-data"><h2 class="section-heading">Tidy Data<a class="anchor" aria-label="anchor" href="#tidy-data"></a>
+</h2>
+<hr class="half-width"><p>Tidy data is a standard way of organizing data values within a
 dataset, making it easier to work with. Here are the key principles of
 tidy data: 1. Every column holds a single variable, like “month” or
 “temperature.” 2. Every row represents a single observation, like
@@ -708,10 +718,9 @@ easier. For instance, comparing monthly trends or calculating annual
 averages becomes more straightforward. - As datasets grow, tidy data
 ensures that they remain manageable and analyses remain accurate.</p>
 </div>
-</div>
-<div class="section level2">
-<h2 id="making-our-data-tidy">Making Our Data Tidy<a class="anchor" aria-label="anchor" href="#making-our-data-tidy"></a></h2>
-<p>A good step towards tidying our data would be to consolidate the
+</section><section id="making-our-data-tidy"><h2 class="section-heading">Making Our Data Tidy<a class="anchor" aria-label="anchor" href="#making-our-data-tidy"></a>
+</h2>
+<hr class="half-width"><p>A good step towards tidying our data would be to consolidate the
 separate month columns into a column called <code>month,</code> and the
 circulation counts into another column called
 <code>circulation_counts.</code> This simplifies our data and aligns
@@ -1309,10 +1318,9 @@ column names in the <code>.groupby()</code> function.</p>
 </tr></tbody></table><p>
 984 rows × 2 columns
 </p>
-</div>
-<div class="section level2">
-<h2 id="adding-a-date-column">Adding a Date Column<a class="anchor" aria-label="anchor" href="#adding-a-date-column"></a></h2>
-<p>In order to plot this data over time in the data visualization we
+</section><section id="adding-a-date-column"><h2 class="section-heading">Adding a Date Column<a class="anchor" aria-label="anchor" href="#adding-a-date-column"></a>
+</h2>
+<hr class="half-width"><p>In order to plot this data over time in the data visualization we
 need to do three things to prepare it. First, we need to combine the
 year and month columns into its own column. Second, convert the new date
 column to a <a href="https://docs.python.org/3/library/datetime.html" class="external-link">datetime</a>
@@ -1446,7 +1454,7 @@ match the content unit however you like.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <table class="table"><thead><tr class="header"><th>Year</th>
 <th>Month</th>
@@ -1516,7 +1524,7 @@ circulation is equal to 0.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1550,7 +1558,7 @@ for all branches in each year.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1602,12 +1610,7 @@ for preparing data for analysis.</li>
 </ul></div>
 </div>
 </div>
-</div>
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/writing-functions.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/data-visualisation.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -1665,7 +1668,7 @@ for preparing data for analysis.</li>
   "url": "https://librarycarpentry.github.io/lc-python-intro/instructor/tidy.html",
   "identifier": "https://librarycarpentry.github.io/lc-python-intro/instructor/tidy.html",
   "dateCreated": "2018-04-12",
-  "dateModified": "2024-06-17",
+  "dateModified": "2024-06-27",
   "datePublished": "2024-06-27"
 }
 
